@@ -4,6 +4,7 @@ import SearchBar from './Components/SearchBar.js';
 import BookList from './Components/BookList';
 import LoginForm from './Components/LoginForm';
 import Bookshelf from './Components/Bookshelf';
+import './App.css'
 
 function App() {
 const [isLoggedIn, setIsLoggedIn] = useState(false);
