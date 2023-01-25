@@ -32,7 +32,7 @@ function BookList({
             <img src={book.volumeInfo.imageLinks.thumbnail} alt="img" />
             <h3>{book.volumeInfo.title}</h3>
             <p>{book.volumeInfo.authors}</p>
-            <p>{book.volumeInfo.description}</p>
+            
             <button onClick={() => onAddToBookshelf(book)}>
               Add to Bookshelf
             </button>
