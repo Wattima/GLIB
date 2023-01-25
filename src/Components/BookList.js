@@ -29,8 +29,10 @@ function BookList({
       <ul>
         {books.map((book) => (
           <li key={book.id}>
+            <img src={book.volumeInfo.imageLinks.thumbnail} alt="img" />
             <h3>{book.volumeInfo.title}</h3>
-            <p>{book.volumeInfo.authors.join(", ")}</p>
+            <p>{book.volumeInfo.authors}</p>
+            
             <button onClick={() => onAddToBookshelf(book)}>
               Add to Bookshelf
             </button>
