@@ -1,9 +1,9 @@
 // Main App component
 import React, { useState } from 'react';
 import SearchBar from './Components/SearchBar.js';
-import BookList from './BookList';
-import LoginForm from './LoginForm';
-import Bookshelf from './Bookshelf';
+import BookList from './Components/BookList';
+import LoginForm from './Components/LoginForm';
+import Bookshelf from './Components/Bookshelf';
 
 function App() {
 const [isLoggedIn, setIsLoggedIn] = useState(false);
