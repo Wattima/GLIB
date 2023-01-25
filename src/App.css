@@ -1,38 +1,141 @@
-.App {
+/* bookshelf styling */
+.bookshelf {
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bookshelf h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bookshelf ul {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bookshelf li {
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bookshelf img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.bookshelf h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.bookshelf p {
+  font-size: 0.9em;
+  color: #999;
+  margin-top: 5px;
+}
+
+.bookshelf button {
+  background-color: #ff3333;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+/* booklist styling */
+.book-list {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.book-list h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.book-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.book-list li {
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.book-list img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.book-list h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.book-list p {
+  font-size: 0.9em;
+  color: #999;
+  margin-top: 5px;
+}
+
+.book-list button {
+  background-color: #ADD8E6;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.book-list .pagination {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* navbar styling */
+.navbar {
+  background-color: #333;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.navbar .brand-name {
+  font-weight: bold;
 }
