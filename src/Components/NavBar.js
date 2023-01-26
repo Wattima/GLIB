@@ -4,7 +4,7 @@ import { NavLink} from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar bg-info">
       
      
      <h1>Book App</h1>

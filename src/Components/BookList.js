@@ -43,24 +43,6 @@ function BookList({
       ))}
     </ul>
     <div>
-<<<<<<< HEAD
-      <h2>Search Results</h2>
-      <ul>
-        {books.map((book) => (
-          <li key={book.id}>
-            <img src={book.volumeInfo.imageLinks.thumbnail} alt="img" />
-            <h3>{book.volumeInfo.title}</h3>
-            <p>{book.volumeInfo.authors}</p>
-            
-            <button onClick={() => onAddToBookshelf(book)}>
-              Add to Bookshelf
-            </button>
-          </li>
-        ))}
-      </ul>
-      <div>
-=======
->>>>>>> main
         {page > 1 && (
           <button onClick={() => onPagination("prev")}>Previous</button>
         )}
