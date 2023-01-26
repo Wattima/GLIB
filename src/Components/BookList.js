@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+
 function BookList({
   searchQuery,
   onAddToBookshelf,
@@ -9,6 +10,7 @@ function BookList({
 }) {
   const [books, setBooks] = useState([]);
   const [totalItems, setTotalItems] = useState(0);
+
   // Fetch books from Google Books API
   useEffect(() => {
     axios
@@ -23,8 +25,25 @@ function BookList({
       })
       .catch((err) => console.log(err));
   }, [searchQuery, API_KEY, page]);
+
   return (
+    <div className="book-list">
+    <h2>Search Results</h2>
+    <ul>
+      {books.map((book) => (
+        <li key={book.id}>
+          <img src={book.volumeInfo.imageLinks.thumbnail} alt="img" />
+          <h3>{book.volumeInfo.title}</h3>
+          <p>{book.volumeInfo.authors}</p>
+          <p>{book.volumeInfo.description}</p>
+          <button onClick={() => onAddToBookshelf(book)}>
+            Add to Bookshelf
+          </button>
+        </li>
+      ))}
+    </ul>
     <div>
+<<<<<<< HEAD
       <h2>Search Results</h2>
       <ul>
         {books.map((book) => (
@@ -40,6 +59,8 @@ function BookList({
         ))}
       </ul>
       <div>
+=======
+>>>>>>> main
         {page > 1 && (
           <button onClick={() => onPagination("prev")}>Previous</button>
         )}
@@ -50,7 +71,9 @@ function BookList({
     </div>
   );
 }
+
 export default BookList;
+
 
 
 

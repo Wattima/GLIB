@@ -1,12 +1,14 @@
 // Bookshelf component
 import React from "react";
+import {Link} from "react-router-dom"
+
 function Bookshelf({ books, onRemoveFromBookshelf, onLogout }) {
   return (
-    <div>
-      <h2>My Bookshelf</h2>
-      <ul>
+    <div className="bookshelf">
+      <h2 class="well">My Bookshelf</h2>
+      <ul class="d-flex flex-row">
         {books.map((book) => (
-          <li key={book.id}>
+          <li key={book.id} class="p-2">
             <img src={book.volumeInfo.imageLinks.thumbnail} alt="img" />
             <h3>{book.volumeInfo.title}</h3>
             <p>{book.volumeInfo.authors.join(", ")}</p>
@@ -16,8 +18,12 @@ function Bookshelf({ books, onRemoveFromBookshelf, onLogout }) {
           </li>
         ))}
       </ul>
+      <Link to ="/">
       <button onClick={onLogout}>Logout</button>
+      </Link>
+   
     </div>
   );
 }
+
 export default Bookshelf;
