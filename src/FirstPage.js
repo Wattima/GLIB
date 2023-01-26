@@ -8,7 +8,7 @@ import Home from "./Home"
 
 function FirstPage() {
   return (
-    <div>
+    <div class="h-100">
          <BrowserRouter>
       <Navbar/>
       <Routes>
@@ -19,8 +19,7 @@ function FirstPage() {
         
       </Routes>
       </BrowserRouter>
-      
-    </div>
+       </div>
   )
 }
 

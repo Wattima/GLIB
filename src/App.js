@@ -7,6 +7,7 @@ import Bookshelf from "./Components/Bookshelf";
 
 
 
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -69,7 +70,7 @@ function App() {
       ) : (
         <LoginForm onLogin={handleLogin} />
       )}
-      <div className="background">
+      <div >
       
       <SearchBar onSearch={setSearchQuery} />
       </div>

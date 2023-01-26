@@ -19,7 +19,7 @@ function Bookshelf({ books, onRemoveFromBookshelf, onLogout }) {
         ))}
       </ul>
       <Link to ="/">
-      <button onClick={onLogout}>Logout</button>
+      <button onClick={onLogout}  class="btn btn-info float-right fs-3 btn-lg">Logout</button>
       </Link>
    
     </div>

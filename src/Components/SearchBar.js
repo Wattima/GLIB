@@ -12,7 +12,7 @@ onSearch(searchQuery);
 return (
 <div>
 <input type="text" placeholder="Search by name, author, or year of publication" onChange={e => setSearchQuery(e.target.value)} />
-<button onClick={handleSearch} type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search</button>
+<button onClick={handleSearch} type="button" class="btn btn-default form-control-label"><span class="glyphicon glyphicon-search" ></span> Search</button>
 </div>
 );
 }
