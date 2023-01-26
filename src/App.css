@@ -43,14 +43,16 @@
 }
 
 .bookshelf button {
-  background-color: #ff3333;
-  color: #fff;
+  background-color:#333;
+  color:gold;
+  font-size: 15px;
   border-radius: 5px;
   padding: 5px 10px;
   margin-top: 10px;
+  margin-left: 70%;
   cursor: pointer;
-  width: 100%;
-  text-align: center;
+  width: 5%;
+  text-align:right;
 }
 
 /* booklist styling */
@@ -97,7 +99,7 @@
 }
 
 .book-list button {
-  background-color: #ADD8E6;
+  background-color:#999;
   color: #fff;
   border-radius: 5px;
   padding: 5px 10px;
@@ -112,22 +114,19 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  background-color: #999;
+  color: antiquewhite;
 }
 
 /* navbar styling */
 .navbar {
   background-color: #333;
   color: #fff;
+  font-size: 15px;
+
 }
 
-.navbar ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
 
 .navbar a {
   color: #fff;

@@ -1,19 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom"; //importing Link component from react-router-dom for navigation
+import { NavLink} from "react-router-dom";
+ 
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <ul>
-        <li>
-          <Link to="/">Home</Link>  {/*using Link component instead of anchor tag, it will handle client-side routing */}
-        </li>
-        <li>
-          <Link to="/About">About</Link>
-        </li>
-        <li className="brand-name">Brand</li>
-      </ul>
+      
+     
+     <h1>Book App</h1>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/App">Log In/Search</NavLink>
+     <NavLink to="/About">About</NavLink>
+     
+     
+    
+    
     </nav>
+    
   );
 };
 
