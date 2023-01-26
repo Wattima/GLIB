@@ -3,13 +3,13 @@ import { Link } from "react-router-dom"; //importing Link component from react-r
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="navbar">
       <ul>
         <li>
           <Link to="/">Home</Link>  {/*using Link component instead of anchor tag, it will handle client-side routing */}
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/About">About</Link>
         </li>
         <li className="brand-name">Brand</li>
       </ul>

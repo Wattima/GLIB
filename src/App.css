@@ -17,9 +17,9 @@
 }
 
 .bookshelf li {
-  width: 30%;
-  margin: 20px;
-  padding: 20px;
+  width: 15%;
+  margin: 2px;
+  padding: 5px;
   margin-top: 10px;
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -72,7 +72,7 @@
 }
 
 .book-list li {
-  width: 30%;
+  width: 15%;
   margin: 20px;
   padding: 20px;
   background-color: #f9f9f9;

@@ -1,6 +1,7 @@
 // LoginForm component
 import React, { useState } from "react";
 import { Input, Button } from "@chakra-ui/react";
+
 function LoginForm({ onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -8,6 +9,7 @@ function LoginForm({ onLogin }) {
   const handleLogin = () => {
     onLogin(username, password);
   };
+
   return (
     <>
         <Input
@@ -20,10 +22,11 @@ type="password"
 placeholder="Password"
 onChange={e => setPassword(e.target.value)}
 />
-<Button variantColor="teal" onClick={handleLogin}>
+<Button variantColor="teal" onClick={handleLogin} class="btn btn-primary">
 Login
 </Button>
 </>
 );
 }
+
 export default LoginForm;
