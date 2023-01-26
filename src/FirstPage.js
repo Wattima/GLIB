@@ -3,12 +3,12 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import About from "./About";
 import Navbar from "./Components/NavBar";
 import App from "./App"
-import LoginForm from "./Components/LoginForm";
+
 import Home from "./Home"
 
 function FirstPage() {
   return (
-    <div>
+    <div class="h-100">
          <BrowserRouter>
       <Navbar/>
       <Routes>
@@ -19,8 +19,7 @@ function FirstPage() {
         
       </Routes>
       </BrowserRouter>
-      
-    </div>
+       </div>
   )
 }
 
