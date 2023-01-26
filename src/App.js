@@ -4,8 +4,8 @@ import SearchBar from "./Components/SearchBar";
 import BookList from "./Components/BookList";
 import LoginForm from "./Components/LoginForm";
 import Bookshelf from "./Components/Bookshelf";
-import About from "./About";
-import Navbar from "./Components/NavBar";
+
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -46,11 +46,11 @@ function App() {
 
   return (
     <div>
-      <Navbar/>
+     
       <div class="page-header">
-      <h1>Welcome to the Book Search App</h1>
+      
     </div>
-
+  
       {isLoggedIn ? (
         <div>
           <Bookshelf
@@ -70,9 +70,10 @@ function App() {
         <LoginForm onLogin={handleLogin} />
       )}
       <div className="background">
-      <About/>
+      
       <SearchBar onSearch={setSearchQuery} />
       </div>
+      
     </div>
   );
 }

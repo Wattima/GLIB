@@ -1,5 +1,6 @@
 // Bookshelf component
 import React from "react";
+import {Link} from "react-router-dom"
 
 function Bookshelf({ books, onRemoveFromBookshelf, onLogout }) {
   return (
@@ -17,7 +18,10 @@ function Bookshelf({ books, onRemoveFromBookshelf, onLogout }) {
           </li>
         ))}
       </ul>
+      <Link to ="/">
       <button onClick={onLogout}>Logout</button>
+      </Link>
+   
     </div>
   );
 }
