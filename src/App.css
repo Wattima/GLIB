@@ -14,10 +14,6 @@ p {
   background-size: cover;
   
 }
-.container {
-  animation: background-animation 10s linear infinite;
-}
-
 
 @keyframes background-animation {
   0% {
