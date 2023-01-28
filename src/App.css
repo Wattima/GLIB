@@ -2,16 +2,20 @@
   background-image: url("https://images.unsplash.com/photo-1577985051167-0d49eec21977?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGxpYnJhcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
   background-size: cover;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: repeat; 
   background-color: #f5f5f5;
 
 }
-
+p {
+  font-size: 20px;
+}
 .container {
   background-image: url("https://images.unsplash.com/photo-1580537659466-0a9bfa916a54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGxpYnJhcnklMjBiYWNrZ3JvdW5kJTIwYmx1ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
   background-size: cover;
   
-  
+}
+.container {
+  animation: background-animation 10s linear infinite;
 }
 
 
