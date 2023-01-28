@@ -12,7 +12,7 @@ function Home() {
       <div class="col d-flex justify-content-center mt-5">
     <div class="card text-center">
       <h1 class="card-title">Welcome to our Book Application</h1>
-      
+        <p class="fs-3 card-body">
             Welcome to GLib the modern Day book app. 
             <br></br>
             The will enable you to cultivate your hobby in reading.
@@ -24,12 +24,15 @@ function Home() {
               <Link to="/App">
               <button class="btn btn-outline-info fs-2 animated pulse" id="login-button">
             Log in</button></Link> to access the books.
+            </p>
+        
+    </div>
             </div>
                 
     </div>
        
 
-    </div>
+    
     
   )
 }

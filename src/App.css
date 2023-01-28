@@ -12,15 +12,8 @@ p {
 .container {
   background-image: url("https://images.unsplash.com/photo-1580537659466-0a9bfa916a54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGxpYnJhcnklMjBiYWNrZ3JvdW5kJTIwYmx1ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
   background-size: cover;
- 
+  
 }
-.nav-link {
-  color: white;
-}
-.container {
-  animation: background-animation 10s linear infinite;
-}
-
 
 @keyframes background-animation {
   0% {
