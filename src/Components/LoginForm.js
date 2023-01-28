@@ -13,10 +13,10 @@ function LoginForm({ onLogin }) {
 
   return (
    <div class="bg-image" >
-    <div  class="d-flex align-items-center justify-content-center">
-      <div class="card">
+    <div  class="d-flex align-items-center justify-content-center my-5">
+      <div class="card my-5">
     <form class="p-3 text-center">
-      <div class="form-group">
+      <div class="form-group my-5">
       <label className="fs-1">Username</label>
         <Input
             type="text"
@@ -33,7 +33,7 @@ placeholder="Password"
 onChange={e => setPassword(e.target.value)}
 className="form-control fs-2"
 />
-<Button variantColor="teal" onClick={handleLogin} class="btn btn-info fs-5">
+<Button variantColor="teal" onClick={handleLogin} class="btn btn-info fs-4 my-5">
 Login
 </Button>
 </div>

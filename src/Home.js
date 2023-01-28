@@ -1,16 +1,32 @@
 import React from 'react'
 import "./App.css"
+import {Link} from "react-router-dom"
 
 function Home() {
   return (
-    <div class="container bg-info d-flex justify-content-center flex-column h-100">
-    <div class="card text-center align-self-center">
+  
+    <div class="container h-100">
+      
+      <h1 class="display-3 font-weight-bold text-uppercase text-secondary">GLIB</h1>
+      
+      <div class="col d-flex justify-content-center mt-5">
+    <div class="card text-center">
       <h1 class="card-title">Welcome to our Book Application</h1>
-        <p class="card-text fs-5" >
-            Welcome to GLib the modern Day book app the will enable you to cultivate your hobby in reading.
+        <p class="fs-3 card-body">
+            Welcome to GLib the modern Day book app. 
+            <br></br>
+            The will enable you to cultivate your hobby in reading.
+            <br></br>
             We will provide your with A ton of books from every genre.
-            Log In to enjoy Enjoy more.
-        </p>
+            <br></br>
+            <br></br>
+          
+              <Link to="/App">
+              <button class="btn btn-outline-info fs-2 animated pulse" id="login-button">
+            Log in</button></Link> to access the books.
+            </p>
+        
+    </div>
     </div>
     </div>
   )
