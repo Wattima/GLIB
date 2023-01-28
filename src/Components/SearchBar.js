@@ -10,10 +10,19 @@ onSearch(searchQuery);
 }
 
 return (
-<div>
-<input type="text" placeholder="Search by name, author, or year of publication" onChange={e => setSearchQuery(e.target.value)} />
-<button onClick={handleSearch} type="button" class="btn btn-default form-control-label"><span class="glyphicon glyphicon-search" ></span> Search</button>
+<div  className="d-flex justify-content-center align-items-center ">
+    <form className="form-inline">
+        <div className="search-box">
+<input type="text" 
+className="form-control form-control-lg text-center search-input fs-3"
+placeholder="Search for books" 
+onChange={e => setSearchQuery(e.target.value)} />
+<button onClick={handleSearch} type="button" class="btn btn-info search-btn fs-3"><i className="fa fa-search"></i>Search</button>
+
 </div>
+</form>
+</div>
+
 );
 }
 

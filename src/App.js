@@ -70,7 +70,7 @@ function App() {
       ) : (
         <LoginForm onLogin={handleLogin} />
       )}
-      <div >
+      <div>
       
       <SearchBar onSearch={setSearchQuery} />
       </div>

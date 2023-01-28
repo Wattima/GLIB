@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+import"../App.css"
+
 function BookList({
   searchQuery,
   onAddToBookshelf,
@@ -27,21 +29,24 @@ function BookList({
   }, [searchQuery, API_KEY, page]);
 
   return (
-    <div className="book-list">
+    <div className="">
     <h2>Search Results</h2>
-    <ul>
+    <div className="card-deck">
+      <div>
       {books.map((book) => (
-        <li key={book.id}>
-          <img src={book.volumeInfo.imageLinks.thumbnail} alt="img" />
-          <h3>{book.volumeInfo.title}</h3>
-          <p>{book.volumeInfo.authors}</p>
-          <p>{book.volumeInfo.description}</p>
-          <button onClick={() => onAddToBookshelf(book)}>
+        <div key={book.id} class="card">
+          
+          <img src={book.volumeInfo.imageLinks.thumbnail}class="card-img-top" alt="img"  />
+          <h5 class="card-title">{book.volumeInfo.title}</h5>
+          <p class="card-text">{book.volumeInfo.authors}</p>
+          <p class="card-text">{book.volumeInfo.description}</p>
+          <button onClick={() => onAddToBookshelf(book)} class="text-muted">
             Add to Bookshelf
           </button>
-        </li>
+        </div>
       ))}
-    </ul>
+      </div>
+    </div>
     <div>
         {page > 1 && (
           <button onClick={() => onPagination("prev")}>Previous</button>
