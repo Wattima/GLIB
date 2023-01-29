@@ -36,7 +36,7 @@ function BookList({
       {books.map((book) => (
         <div key={book.id} class="card">
           
-          <img src={book.volumeInfo.imageLinks.thumbnail}class="card-img-top" alt="img"  />
+          <img src={book.volumeInfo.imageLinks.thumbnail}class="img" alt="img"  />
           <h5 class="card-title">{book.volumeInfo.title}</h5>
           <p class="card-text">{book.volumeInfo.authors}</p>
           <p class="card-text">{book.volumeInfo.description}</p>
